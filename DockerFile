@@ -4,5 +4,4 @@ run npm install -g yarn
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
-run cd /vuejs.org
 run yarn && yarn build
