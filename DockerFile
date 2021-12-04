@@ -2,5 +2,7 @@ from centos
 run yum install -y git nodejs
 run npm install -g yarn
 run git clone https://github.com/vuejs/vuejs.org.git
-run cd ./vuejs.org
+COPY . /vuejs.org
+WORKDIR /vuejs.org
+run cd /vuejs.org
 run yarn && yarn build
