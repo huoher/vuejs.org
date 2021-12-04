@@ -1,5 +1,6 @@
-from node:14-buster-slim
-# run npm install -g yarn
+from node:14-alpine
+run apk add git
+run npm install -g yarn
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
