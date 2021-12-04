@@ -1,7 +1,6 @@
 from node:14-alpine
-run apk add git
+run sudo apk add git
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
-run rm -rf yarn.lock
-run npm install && npm run build
+run yarn && yarn build
