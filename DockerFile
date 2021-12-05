@@ -1,5 +1,5 @@
-from node:14-alpine
-run apk add git
+from node:16-buster-slim
+run apt-get install git -y
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
