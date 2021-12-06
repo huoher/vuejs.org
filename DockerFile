@@ -1,5 +1,7 @@
-from node:16-buster-slim
-run apt-get install git -y
+from centos:centos7
+run yum -y install git
+run yum -y install nodejs
+run npm install -g yarn
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
