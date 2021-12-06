@@ -1,4 +1,4 @@
-from node:14-buster-slim
+from node:12-buster-slim
 run apt-get update && apt-get install -y git
 run git clone https://github.com/vuejs/cn.vuejs.org.git
 WORKDIR /cn.vuejs.org
