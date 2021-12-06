@@ -1,5 +1,5 @@
 from node:14-buster-slim
-run apt-get install -y git
+run apt-get update && apt-get install -y git
 run git clone https://github.com/vuejs/vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
