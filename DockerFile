@@ -1,6 +1,6 @@
 from node:14-buster-slim
 run apt-get update && apt-get install -y git
-run git clone https://github.com/vuejs/vuejs.org.git
+run git clone https://gitee.com/huoher/cn.vuejs.org.git
 COPY . /vuejs.org
 WORKDIR /vuejs.org
 run yarn && yarn build
