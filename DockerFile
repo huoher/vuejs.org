@@ -3,4 +3,5 @@ run apt-get update && apt-get install -y git
 run git clone https://gitee.com/huoher/cn.vuejs.org.git
 COPY . /cn.vuejs.org
 WORKDIR /cn.vuejs.org
+run git checkout master
 run yarn && yarn build
